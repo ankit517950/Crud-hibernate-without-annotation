@@ -1,0 +1,18 @@
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 5.3//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="org.example.crud" table="ankit_hql">
+        <id name="roll" column="Roll" type="integer" >
+            <generator class="assigned"></generator>
+        </id>
+        <property name="name" column="Name" type="string" not-null="true"></property>
+        <property name="cgpa" column="CGPA" type="float" not-null="true"></property>
+        <property name="college" column="College" type="string" not-null="true"></property>
+
+    </class>
+
+</hibernate-mapping>
+
+        <!--check out this: https://codedec.com/tutorials/what-is-hibernate-mapping-file/-->
